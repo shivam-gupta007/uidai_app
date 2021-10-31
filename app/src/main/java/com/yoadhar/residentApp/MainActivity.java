@@ -160,7 +160,6 @@ public class MainActivity extends AppCompatActivity {
                         otpTxId = response.getString("txnId");
 
                         Toast.makeText(MainActivity.this, "OTP sent to Your Registered Mobile NO", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(MainActivity.this, response.toString(), Toast.LENGTH_SHORT).show();
 
                     } else {
                         Snackbar.make(findViewById(R.id.relativeLayout), "Check UID or Captcha Value", Snackbar.LENGTH_SHORT).show();
@@ -206,7 +205,6 @@ public class MainActivity extends AppCompatActivity {
                     if (response.getString("status").equals("Success")) {
                         encodedCaptcha = response.getString("captchaBase64String");
                         txId = response.getString("captchaTxnId");
-
                         setCaptcha();
 
 
