@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@color/white"
+
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputUid"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_input"
+        android:hint="Enter UID"
+        android:inputType="number"
+        android:maxLength="12"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:autofillHints="none"
+        />
+
+    <EditText
+        android:id="@+id/inputCaptcha"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/inputUid"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_input"
+        android:hint="Enter Captcha Code"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_cap"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/inputCaptcha"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/rounded_input"
+        android:contentDescription="Captcha Image"
+        android:scaleType="fitCenter"
+         />
+
+
+    <ImageView
+        android:id="@+id/refreshIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="214dp"
+        android:background="@drawable/ic_refresh_svg"
+        />
+
+    <Button
+        android:id="@+id/sendOtpBtn"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/iv_cap"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_btn"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="send otp"
+        android:textColor="#EEEEEE"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_eotp"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sendOtpBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_input"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:maxLength="6"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/et_eotp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_btn"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="SUBMIT"
+        android:textColor="#EEEEEE"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="290dp"
+        android:layout_height="144dp"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="User Aadhaar Image"
+        android:src="@drawable/ic_launcher_background"
+ />
+
+
+</RelativeLayout>
